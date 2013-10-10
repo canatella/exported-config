@@ -1,0 +1,11 @@
+partial modifier_keys
+xkb_symbols "muhenkan-control" {
+  replace key <MUHE> { [ Control_L, Control_L ] };
+  modifier_map Control { <MUHE> };
+};
+
+partial modifier_keys
+xkb_symbols "henkan-hyper" {
+  replace key <HENK> { [ Hyper_R, Hyper_R ] };
+  modifier_map Mod3 { Hyper_R };
+};

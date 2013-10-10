@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Xkb Setup
+GenericName=Keyboard Custom Configuration
+Comment=Execute custom keyboard configuration script
+Exec=sh -c \$HOME/.exported-config/xkb/start
+Terminal=false
+Type=Application
+StartupNotify=false

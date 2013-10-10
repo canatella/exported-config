@@ -1,0 +1,7 @@
+xkb_keymap {
+	xkb_keycodes  { include "evdev+aliases(azerty)"	};
+	xkb_types     { include "complete"	};
+	xkb_compat    { include "complete"	};
+	xkb_symbols   { include "pc+fr(bepo)+be:2+inet(evdev)+japmod(muhenkan-control)+japmod(henkan-hyper)"	};
+	xkb_geometry  { include "typematrix(tm2030USB-106)"	};
+};

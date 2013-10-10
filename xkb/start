@@ -1,0 +1,6 @@
+#!/bin/sh
+touch /tmp/test-xkb
+DIR=$HOME/.exported-config/xkb
+#ID=$(xinput list | sed -n '/TypeMatrix.*keyboard/ s/.*id=\([0-9]\+\).*/\1/ p')
+#xkbcomp -i $ID -I$DIR $DIR/keymap/typematrix $DISPLAY
+xkbcomp -I$DIR $DIR/keymap/typematrix $DISPLAY
