@@ -1,0 +1,5 @@
+partial alphanumeric_keys
+xkb_symbols "switch-carrets" {
+    key <AE02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ less,    2, guillemotleft,  leftdoublequotemark  ] }; // < 2 « “
+    key <AE03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ greater, 3, guillemotright, rightdoublequotemark ] }; // > 3 » ”
+};
