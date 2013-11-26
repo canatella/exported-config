@@ -14,3 +14,6 @@ git clone https://github.com/canatella/emacscfg.git $HOME/.emacs.d
 
 echo installing keyboard setup
 desktop-file-install --dir=$HOME/.config/autostart $CDIR/xkb/xkb-setup.desktop
+
+echo installing tmux config
+ln -fs $CDIR/tmux/tmux.conf ~/.tmux.conf
