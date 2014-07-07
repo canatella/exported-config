@@ -4,7 +4,7 @@ CDIR=$HOME/.exported-config
 
 echo installing packages
 sudo apt-get --yes install mc emacs24 emacs24-el yasnippet expand-region-el \
-		exuberant-ctags
+		exuberant-ctags git tmux
 
 echo cloning config directory to $CDIR
 git clone https://github.com/canatella/exported-config.git $CDIR
