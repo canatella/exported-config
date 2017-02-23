@@ -1,11 +1,31 @@
+// Make the switch app key left control
+//
+// On the jp106 typematrix 2030, we need to remap muhenkan key to
+// left control.
 partial modifier_keys
 xkb_symbols "muhenkan-control" {
   replace key <MUHE> { [ Control_L, Control_L ] };
   modifier_map Control { <MUHE> };
 };
 
+// Make the desktop key right hyper
+//
+// On the jp106 typematrix 2030, we need to remap henkan key to
+// hyper.
 partial modifier_keys
 xkb_symbols "henkan-hyper" {
   replace key <HENK> { [ Hyper_R, Hyper_R ] };
   modifier_map Mod3 { Hyper_R };
+};
+
+partial alphanumeric_keys
+xkb_symbols "bepo-fix" {
+  // Restore calculator key
+  key <AE13> { [ XF86Calculator ] };
+  // Restore mail key
+  key <BKSL> { [ XF86Mail ] };
+  // Restore www kye
+  key <HKTG> { [ XF86WWW ] };
+  // C cedilla key is AB11
+  key <AB11> { [ ccedilla, Ccedilla, dead_cedilla, dead_belowcomma ] };
 };

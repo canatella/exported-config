@@ -14,3 +14,4 @@ xkb_symbols "scroll-lock-hyper" {
   replace key <SCLK> { [ Hyper_R, Hyper_R ] };
   modifier_map Mod3 { Hyper_R };
 };
+
